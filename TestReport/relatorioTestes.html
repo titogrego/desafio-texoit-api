@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Teste Automatizados de API </title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css">#img {
+width: 120px;
+height: 35px;
+float: left;
+position: absolute;
+margin-left: -40%;
+margin-top: -3%;
+}</style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"><img id='img' src='https://d33wubrfki0l68.cloudfront.net/c0058fb67e00f9fccf6289f1a59289e0ac5cb667/a3bdc/logo_texosite.df1d3477.svg' />
+<span>Relat&oacute;rio de execu&ccedil;&atilde;o dos testes</span>
+</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">mai 17, 2024 06:44:25 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">DesafioTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="DesafioTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">validar Retorno Api Get Comments</p>
+            <p class="text-sm">
+              <span>18:44:26</span> / <span>00:00:02:404</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validar Retorno Api Get Comments</h5>
+<span class='badge badge-success'>05.17.2024 18:44:26</span>
+<span class='badge badge-danger'>05.17.2024 18:44:28</span>
+<span class='badge badge-default'>00:00:02:404</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">DesafioTest</span></div>
+<div class="m-t-10 m-l-5">Validar o retorno da API</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:44:28</td>
+        <td>
+          Test executado com sucesso!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:44:28</td>
+        <td>
+          Request: <br><pre>Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/comments?name=alias%20odio%20sit
+Proxy:			<none>
+Request params:	name=alias odio sit
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:44:28</td>
+        <td>
+          Response: <br><pre>HTTP/1.1 200 OK
+Date: Fri, 17 May 2024 21:44:27 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1715641989&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=pS%2FIPagzOZjeu8q9r3lai71jTBsWPegNd2uvVIDauzY%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715641989&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=pS%2FIPagzOZjeu8q9r3lai71jTBsWPegNd2uvVIDauzY%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715642042
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/"111-6u76iwAy3hUeWlMv+eUisvAa88Q"
+Via: 1.1 vegur
+CF-Cache-Status: HIT
+Age: 16470
+Server: cloudflare
+CF-RAY: 8856c9f21e602610-GIG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+[
+    {
+        "postId": 1,
+        "id": 4,
+        "name": "alias odio sit",
+        "email": "Lew@alysha.tv",
+        "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+    }
+]
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="DesafioTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">validar Retorno Api Post Users</p>
+            <p class="text-sm">
+              <span>18:44:28</span> / <span>00:00:00:988</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validar Retorno Api Post Users</h5>
+<span class='badge badge-success'>05.17.2024 18:44:28</span>
+<span class='badge badge-danger'>05.17.2024 18:44:29</span>
+<span class='badge badge-default'>00:00:00:988</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">DesafioTest</span></div>
+<div class="m-t-10 m-l-5">Validar o retorno da API</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:44:29</td>
+        <td>
+          Test executado com sucesso!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:44:29</td>
+        <td>
+          Request: <br><pre>Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "name": "Vinicius Quaresma Filho",
+    "username": "olívia.monteira",
+    "email": "fabricio.dapenha@live.com",
+    "address": {
+        "street": "93211 Marginal Yango da Penha",
+        "suite": "ap 201",
+        "city": "Formoso do Araguaia",
+        "zipcode": "35019-548",
+        "geo": {
+            "lat": "-31,660826",
+            "lng": "-145,04917"
+        }
+    },
+    "phone": "(62) 91593-6464",
+    "website": "regueira.name",
+    "company": {
+        "name": "Alves e Associados",
+        "catchPhrase": "Persistent discrete support",
+        "bs": "grow one-to-one models"
+    }
+}
+</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:44:29</td>
+        <td>
+          Response: <br><pre>HTTP/1.1 201 Created
+Date: Fri, 17 May 2024 21:44:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 549
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1715982268&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=RUF9eHKjjIQFfR5JQPSiTc9GKMAYHzo7swMUmQmOmEQ%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715982268&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=RUF9eHKjjIQFfR5JQPSiTc9GKMAYHzo7swMUmQmOmEQ%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715982301
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: https://jsonplaceholder.typicode.com/users/11
+X-Content-Type-Options: nosniff
+Etag: W/"225-rCTfooePu9x+nj2PFwxdB3hypW8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8856c9f9ed46649c-GIG
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "name": "Vinicius Quaresma Filho",
+    "username": "olívia.monteira",
+    "email": "fabricio.dapenha@live.com",
+    "address": {
+        "street": "93211 Marginal Yango da Penha",
+        "suite": "ap 201",
+        "city": "Formoso do Araguaia",
+        "zipcode": "35019-548",
+        "geo": {
+            "lat": "-31,660826",
+            "lng": "-145,04917"
+        }
+    },
+    "phone": "(62) 91593-6464",
+    "website": "regueira.name",
+    "company": {
+        "name": "Alves e Associados",
+        "catchPhrase": "Persistent discrete support",
+        "bs": "grow one-to-one models"
+    }
+}
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="DesafioTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">validar Retorno Api Put Users</p>
+            <p class="text-sm">
+              <span>18:44:29</span> / <span>00:00:00:444</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validar Retorno Api Put Users</h5>
+<span class='badge badge-success'>05.17.2024 18:44:29</span>
+<span class='badge badge-danger'>05.17.2024 18:44:30</span>
+<span class='badge badge-default'>00:00:00:444</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">DesafioTest</span></div>
+<div class="m-t-10 m-l-5">Validar o retorno da API</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:44:30</td>
+        <td>
+          Test executado com sucesso!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:44:30</td>
+        <td>
+          Request: <br><pre>Request method:	PUT
+Request URI:	https://jsonplaceholder.typicode.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "name": "Luiz Miguel Caseira",
+    "username": "igor.rolim",
+    "email": "kaue.casqueira@live.com",
+    "address": {
+        "street": "801 Marginal Ígor Meira",
+        "suite": "ap 201",
+        "city": "Grandes Rios",
+        "zipcode": "95890-285",
+        "geo": {
+            "lat": "74,395745",
+            "lng": "25,712651"
+        }
+    },
+    "phone": "(13) 96009-7719",
+    "website": "da costa.org",
+    "company": {
+        "name": "Tavares, Limeira e Velasques",
+        "catchPhrase": "Exclusive composite database",
+        "bs": "transform granular metrics"
+    }
+}
+</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:44:30</td>
+        <td>
+          Response: <br><pre>HTTP/1.1 200 OK
+Date: Fri, 17 May 2024 21:44:29 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1715982269&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=9IB9jy49tcLUaZMcqmwAbNU5UB%2FZ4Rype%2FrvnJNy6XQ%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715982269&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=9IB9jy49tcLUaZMcqmwAbNU5UB%2FZ4Rype%2FrvnJNy6XQ%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 998
+X-Ratelimit-Reset: 1715982301
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/"218-nKR6uYoxKDIuoEA2EKTfCXCGpzU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8856c9fd691a64f7-GIG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "name": "Luiz Miguel Caseira",
+    "username": "igor.rolim",
+    "email": "kaue.casqueira@live.com",
+    "address": {
+        "street": "801 Marginal Ígor Meira",
+        "suite": "ap 201",
+        "city": "Grandes Rios",
+        "zipcode": "95890-285",
+        "geo": {
+            "lat": "74,395745",
+            "lng": "25,712651"
+        }
+    },
+    "phone": "(13) 96009-7719",
+    "website": "da costa.org",
+    "company": {
+        "name": "Tavares, Limeira e Velasques",
+        "catchPhrase": "Exclusive composite database",
+        "bs": "transform granular metrics"
+    }
+}
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">DesafioTest</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>DesafioTest</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:44:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>validar Retorno Api Get Comments</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:44:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>validar Retorno Api Post Users</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:44:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>validar Retorno Api Put Users</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>mai 17, 2024 06:44:25 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>mai 17, 2024 06:44:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>3</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'><b>3</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>6</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"validar Retorno Api Get Comments":2.404,"validar Retorno Api Post Users":0.988,"validar Retorno Api Put Users":0.444
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>DesafioTest</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Ambiente de teste</td>
+<td>Homologação</td>
+</tr>
+<tr>
+<td>Autor</td>
+<td>Tito Neto</td>
+</tr>
+<tr>
+<td>Sistema Operacional</td>
+<td>Windows 10</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 3,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 6
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"> $(document).ready(function() {
+$('link[rel="shortcut icon"]').attr('href','https://www.texoit.com/icon.f0405c76.png');
+$('.logo').removeAttr('style');
+$('.logo').html('<img src="https://www.texoit.com/icon.f0405c76.png" style="margin-top:10px">');
+$('.nav-logo > a').attr('href','https://www.texoit.com');
+$('.nav-logo > a').attr('target','_blank');
+});</script></body>
+</html>

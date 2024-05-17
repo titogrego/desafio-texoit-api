@@ -5,7 +5,7 @@ test-output/**
 .settings/**
 # Files #
 ###################
-*.html
+
 *.jpg
 
 # Compiled source #
