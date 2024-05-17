@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="allSuites" >
+    <listeners>
+        <listener class-name="Helpers.Listener"/>
+    </listeners>
+
+    <test name="TestApiSuperVendedor">
+        <classes>
+            <class name="Tests.DesafioTest"/>
+        </classes>
+    </test>
+
+</suite>
