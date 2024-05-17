@@ -29,3 +29,10 @@ jobs:
       with:
           name: Report                # Name of the folder
           path: TestReport/      # Path to test results
+    # publicar relatorio em html
+    - name: Deploy to GithubPages
+      uses: JamesIves/github-pages-deploy-action@3.5.9
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: TestReport
